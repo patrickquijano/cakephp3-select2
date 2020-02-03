@@ -1,0 +1,6 @@
+*.css linguist-detectable=false
+*.ctp linguist-detectable=false
+*.html linguist-detectable=false
+*.js linguist-detectable=false
+*.map linguist-detectable=false
+*.php linguist-detectable=true
