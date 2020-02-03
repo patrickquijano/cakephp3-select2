@@ -20,9 +20,9 @@ class Select2Helper extends Helper {
         'css' => [
             'url' => 'https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css',
             'integrity' => 'sha256-FdatTf20PQr/rWg+cAKfl6j4/IY3oohFAJ7gVC3M34E=',
-            'bootstrap' => [
-                'url' => 'https://cdn.jsdelivr.net/npm/select2-bootstrap-theme@0.1.0-beta.10/dist/select2-bootstrap.min.css',
-                'integrity' => 'sha256-nbyata2PJRjImhByQzik2ot6gSHSU4Cqdz5bNYL2zcU=',
+            'bootstrap4' => [
+                'url' => 'https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.3.2/dist/select2-bootstrap4.min.css',
+                'integrity' => 'sha256-ufgBrsh/MaI1q/Pw4E8Osv+4oo2a7Z6lfeF42WpjVa4=',
             ],
         ],
         'script' => [
@@ -75,8 +75,8 @@ class Select2Helper extends Helper {
             $out = '';
             $out .= $this->Html->css('Select2.select2.min', $options);
             if (isset($options['theme'])) {
-                if ($options['theme'] === 'bootstrap') {
-                    $out .= $this->Html->css('Select2.select2-bootstrap.min', $options);
+                if ($options['theme'] === 'bootstrap4') {
+                    $out .= $this->Html->css('Select2.select2-bootstrap4.min', $options);
                 }
                 unset($options['theme']);
             }
